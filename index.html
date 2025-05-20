@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexes Lab | Blog & Portfolio</title>
+    <meta name="description" content="Rexes Lab - Exploring AI, Art, and Travel through blogs, portfolios, and insights.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Rexes Lab</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#ai">AI</a></li>
+                    <li><a href="#art">Art</a></li>
+                    <li><a href="#travel">Travel</a></li>
+                    <!-- Add Login link here -->
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Rexes Lab</h1>
+            <p>Your destination for exploring AI, Art, and Travel</p>
+            <a href="#overview" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview" id="overview">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Rexes Lab combines the power of AI, the creativity of Art, and the thrill of Travel into one platform, delivering reviews, insights, and stunning visuals.</p>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section class="section" id="ai">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Technology</h2>
+                <p>Explore groundbreaking advancements in AI, including ChatGPT and Gemini. Stay ahead in the world of artificial intelligence with our in-depth articles and reviews.</p>
+            </div>
+            <div class="ai-content">
+                <img src="images/ai-image.jpg" alt="AI Image" class="ai-image">
+                <div class="ai-details">
+                    <h3>Discover the Future</h3>
+                    <p>Join us on a journey through AI innovations and learn about the future of technology.</p>
+                    <a href="ai.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Section -->
+    <section class="section" id="art">
+        <div class="container">
+            <div class="section-header">
+                <h2>Art Reviews</h2>
+                <p>Explore unique artwork reviews that celebrate creativity, culture, and innovation. Discover the stories behind the masterpieces.</p>
+            </div>
+            <div class="art-content">
+                <div class="art-item">
+                    <img src="images/art1.jpg" alt="Art Image 1" class="art-image">
+                    <h3>Modern Art</h3>
+                    <p>Understanding the revolution in modern art and the artists behind it.</p>
+                </div>
+                <div class="art-item">
+                    <img src="images/art2.jpg" alt="Art Image 2" class="art-image">
+                    <h3>Classical Paintings</h3>
+                    <p>A deep dive into classical masterpieces and their lasting influence.</p>
+                </div>
+                <a href="art.html" class="btn">Discover More Art</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Section -->
+    <section class="section" id="travel">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Experiences</h2>
+                <p>From serene beaches to bustling cities, experience the world through our travel reviews and stunning photography.</p>
+            </div>
+            <div class="travel-content">
+                <div class="travel-item">
+                    <img src="images/travel1.jpg" alt="Travel Destination 1" class="travel-image">
+                    <h3>Beautiful Beaches</h3>
+                    <p>Explore the world's most beautiful and hidden beaches, perfect for a peaceful getaway.</p>
+                </div>
+                <div class="travel-item">
+                    <img src="images/travel2.jpg" alt="Travel Destination 2" class="travel-image">
+                    <h3>Urban Exploration</h3>
+                    <p>Uncover the charm of the world's most vibrant cities and their unique cultures.</p>
+                </div>
+                <a href="travel.html" class="btn">Explore Travel Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://facebook.com/rexeslab" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/rexeslab" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com/rexeslab" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/rexeslab" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 Rexes Lab | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <!-- Inline Script for Navigation -->
+    <script>
+        // Check if the user is logged in by checking localStorage
+        window.onload = function() {
+            // If there's no 'loggedIn' item in localStorage, redirect to login page
+            if (!localStorage.getItem('loggedIn')) {
+                window.location.href = 'login.html';
+            }
+        };
+
+        function navigateToHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

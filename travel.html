@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Experiences | Rexes Lab</title>
+    <meta name="description" content="Join us as we explore the beauty of various travel destinations through captivating visuals and immersive experiences.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Check if user is logged in -->
+    <script>
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'login.html'; // Redirect to login page if not logged in
+        }
+    </script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Rexes Lab</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#overview">Overview</a></li>
+                    <li><a href="index.html#ai">AI</a></li>
+                    <li><a href="index.html#art">Art</a></li>
+                    <li><a href="index.html#travel" class="active">Travel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Travel Section -->
+    <section class="travel-main" id="travel">
+        <div class="container">
+            <div class="travel-header">
+                <h1>Travel Experiences - Explore the World</h1>
+                <p>Join us as we discover the beauty of various travel destinations, with captivating visuals and immersive experiences.</p>
+            </div>
+
+            <div class="travel-content">
+                <!-- Bali Beaches -->
+                <div class="travel-item">
+                    <h2>The Enchanting Beaches of Bali</h2>
+                    <div class="travel-images">
+                        <img src="images/bali-beach1.jpg" alt="Bali Beach 1" class="travel-image">
+                        <img src="images/bali-beach2.jpg" alt="Bali Beach 2" class="travel-image">
+                        <img src="images/bali-beach3.jpg" alt="Bali Beach 3" class="travel-image">
+                    </div>
+                    <p>Bali, known for its vibrant culture and stunning beaches, offers an unforgettable experience for all travelers. The beaches of Bali are perfect for relaxation and adventure alike.</p>
+                </div>
+
+                <!-- Rome Historical Sites -->
+                <div class="travel-item">
+                    <h2>Exploring the Historical Wonders of Rome</h2>
+                    <div class="travel-images">
+                        <img src="images/rome-colosseum1.jpg" alt="Rome Colosseum 1" class="travel-image">
+                        <img src="images/rome-colosseum2.jpg" alt="Rome Colosseum 2" class="travel-image">
+                        <img src="images/rome-colosseum3.jpg" alt="Rome Colosseum 3" class="travel-image">
+                    </div>
+                    <p>Rome is a city where history comes to life. From the ancient Colosseum to the Vatican, the city offers a rich tapestry of historical landmarks to explore.</p>
+                </div>
+
+                <!-- Swiss Alps Adventure -->
+                <div class="travel-item">
+                    <h2>Adventures in the Swiss Alps</h2>
+                    <div class="travel-images">
+                        <img src="images/swiss-alps1.jpg" alt="Swiss Alps 1" class="travel-image">
+                        <img src="images/swiss-alps2.jpg" alt="Swiss Alps 2" class="travel-image">
+                        <img src="images/swiss-alps3.jpg" alt="Swiss Alps 3" class="travel-image">
+                    </div>
+                    <p>The Swiss Alps are a paradise for adventure seekers. Whether you love skiing, hiking, or simply enjoying the majestic views, this destination has it all.</p>
+                </div>
+            </div>
+
+            <!-- Centered Button -->
+            <div class="button-container">
+                <a href="index.html#home" class="btn">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://facebook.com/rexeslab" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/rexeslab" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com/rexeslab" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/rexeslab" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 Rexes Lab | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

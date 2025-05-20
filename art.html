@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Reviews | Rexes Lab</title>
+    <meta name="description" content="Dive into the world of art with Rexes Lab. Explore Modern Abstract, Classic Renaissance, and the evolution of Digital Art.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Check if user is logged in -->
+    <script>
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'login.html'; // Redirect to login page if not logged in
+        }
+    </script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Rexes Lab</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#overview">Overview</a></li>
+                    <li><a href="index.html#ai">AI</a></li>
+                    <li><a href="index.html#art" class="active">Art</a></li>
+                    <li><a href="index.html#travel">Travel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Art Section -->
+    <section class="art-main" id="art">
+        <div class="container">
+            <div class="section-header">
+                <h1>Art Reviews - Discover Creativity</h1>
+                <p>Explore stunning works of art and immerse yourself in the world of creativity and innovation.</p>
+            </div>
+
+            <div class="art-content">
+                <!-- Modern Abstract Section -->
+                <div class="art-item">
+                    <h2>Modern Abstract</h2>
+                    <img src="images/modern-abstract.jpg" alt="Modern Abstract Art" class="art-image">
+                    <p>This piece showcases the beauty of abstract art, blending colors and shapes to create a unique visual experience that challenges traditional forms.</p>
+                </div>
+
+                <!-- Classic Renaissance Section -->
+                <div class="art-item">
+                    <h2>Classic Renaissance</h2>
+                    <img src="images/renaissance.jpg" alt="Classic Renaissance Art" class="art-image">
+                    <p>The Renaissance era brought about a profound transformation in art, emphasizing realism, emotion, and detail in ways never seen before.</p>
+                </div>
+
+                <!-- Digital Art Section -->
+                <div class="art-item">
+                    <h2>Digital Art Evolution</h2>
+                    <img src="images/digital-art.jpg" alt="Digital Art Evolution" class="art-image">
+                    <p>Digital art has revolutionized the art world by merging technology with creativity, giving artists a new medium to express their visions.</p>
+                </div>
+            </div>
+
+            <!-- Centered Button -->
+            <div class="button-container">
+                <a href="index.html#home" class="btn">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://facebook.com/rexeslab" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/rexeslab" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/rexeslab" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/rexeslab" target="_blank">
+                    <img src="images/github.png" alt="GitHub">
+                </a>
+            </div>
+            <p>&copy; 2024 Rexes Lab | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
